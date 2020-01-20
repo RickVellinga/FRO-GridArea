@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+html, body, h3 {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  padding: 2em;
+  background-color: #178bff;
+  color: black;
+  margin-bottom: 5px;
+}
+
+aside {
+  background-color: rgb(186, 237, 253);
+}
+
+h1, h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+section {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  padding-bottom: .2em;
+}
+
+h1, .tagline {
+  color: white;
+}
+
+.nummer {
+  background-color: #178bff;
+  color: #eee;
+  font-size: 3em;
+  width: 1.2em;
+  text-align: right;
+  padding: .2em;
+}
+
+article {
+  padding: 1em;
+}
+
+section img {
+  max-width: 100%;
+}
+
+aside ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(186, 237, 253);
+}
+
+aside h3 {
+  background-color: #178bff;
+  color: #eee;
+  padding: 2em;
+}
+
+aside a {
+  text-decoration: none;
+  padding: 2em;
+  display: block;
+  color: rgb(5, 43, 80);
+}
+
+aside a:hover {
+  color: #fff;
+  background-color: #6daae7;
+}
+
+footer {
+  background-color: #333;
+  color: #eee;
+  padding: 2em;
+}
+
+aside ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 760px) {
+  .afb {
+    display: block;
+    background-image: url('https://media.discordapp.net/attachments/620924153461211136/667291426048049152/studeren.jpg');
+    background-size: cover;
+    margin: 0px 5px 5px 0px;
+    background-position: center center;
+  }
+
+  body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "kop kop"
+      "t1 t2"
+      "t3 t4"
+      "afb t5"
+      "afb t6"
+      "t7 aside"
+      "t8 aside"
+      "t9 aside"
+      "t10 aside"
+      "voet voet";
+  }
+
+  header {
+    grid-area: kop;
+  }
+
+  .boksen {
+    grid-area: t1;
+  }
+
+  .kikkers {
+    grid-area: t2;
+  }
+
+  .afb {
+    grid-area: afb;
+    transform: scaleX(-1);
+  }
+
+  .blind {
+    grid-area: t3;
+  }
+
+  .goudvis {
+    grid-area: t4;
+  }
+
+  .plassen {
+    grid-area: t5;
+    }
+
+  .hond {
+    grid-area: t6;
+  }
+
+  .zwembad {
+    grid-area: t7;
+  }
+
+  .wedstrijd {
+    grid-area: t8;
+  }
+
+  .lift {
+    grid-area: t9;
+  }
+
+  .trein {
+    grid-area: t10;
+  }
+
+  aside {
+    grid-area: aside;
+  }
+
+  footer {
+    grid-area: voet;
+  }
+
+  h1 {
+    font-size: 2.6em;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    background-color: #178bff;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "kop kop kop"
+      "t1 t2 afb"
+      "t3 t4 afb"
+      "aside t5 t6"
+      "aside t7 t8"
+      "aside t9 t10"
+      "voet voet voet";
+  }
+}
